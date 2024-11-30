@@ -13,13 +13,13 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300, // Set the width here
+      width: 300,
       child: TextField(
         obscureText: obscureText,
         decoration: InputDecoration(
           labelText: label,
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10), // Rounded corners
+            borderRadius: BorderRadius.circular(10),
             borderSide:
                 const BorderSide(color: Color.fromARGB(255, 254, 137, 149)),
           ),
