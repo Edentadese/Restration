@@ -8,7 +8,6 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(title: const Text('Login')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -26,20 +25,16 @@ class LoginPage extends StatelessWidget {
             Container(
               width: 300,
               child: ElevatedButton(
-                onPressed: () {
-                  // Handle registration logic
-                },
+                onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.white,
-                  backgroundColor:
-                      const Color.fromARGB(255, 254, 97, 89), // Text color
+                  backgroundColor: const Color.fromARGB(255, 254, 97, 89),
                   padding:
                       const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5), // Round corners
+                    borderRadius: BorderRadius.circular(5),
                   ),
-
-                  elevation: 5, // Shadow effect
+                  elevation: 5,
                 ),
                 child: const Text(
                   'Login',
@@ -57,7 +52,6 @@ class LoginPage extends StatelessWidget {
                     Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => const RegistrationPage(),
                     ));
-                    // Navigate to the login page or perform an action
                   },
                   child: Text(
                     'Register',
